@@ -1,0 +1,89 @@
+2.3
+
+6
+
+23/10  6/100 7/1000
+
+mkdir angular
+cd angular
+ng new shopping
+
+
+cd shopping
+npm install bootstrap
+
+
+npm install -g webpack
+npm install -g webpack-cli
+
+
+Angular
+	Component - Based Architecture
+		index.html
+			root - component
+				component	
+					component
+				
+template -> component
+
+component -> template	Property			
+Module
+	- Component
+	- Directives
+	- Pipes
+	- Services
+	- Module
+Module
+
+index.html
+main.ts
+
+Root Module	
+	Root Component
+
+@NgModule({
+	declaration:[AppComponent],
+	imports:[BrowserModule],
+	providers:[],
+	bootstrap:[AppComponent]
+})
+export class AppModule{
+}
+
+@Component({
+	selector: '',
+	templateUrl: ''
+})
+export class AppComponent{
+}
+				
+
+
+Directives
+	Structural Directives - Change the dom structure
+	Attribute Directives - Not change the dom structure
+	
+	
+Structural Directives
+	-ngIf
+	-ngFor
+	-ngSwitch
+	
+Attribute Directives
+	-ngStyle
+	-ngClass
+	
+	client side scripting (Runs on Browser)
+		HTML
+		Java scripting
+		
+		
+		Angular 1 (Java Script)
+									
+		Microsoft - Type Script  -> Java script (Transpiler) => babel
+			let a:number
+			a="Arun"
+	
+	
+
+	

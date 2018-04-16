@@ -1,0 +1,74 @@
+
+<div class="container-fluid mr-0 ml-0 pr-0 pl-0">
+  <div class="row">
+            <div class="col-12">
+                    <label class="form-control text-right">{{operation}}</label>
+            </div>
+            <div class="col-12">
+                    <label class="form-control text-right"  >{{result}}</label>
+            </div>
+ 
+    <div class="col-7 bg-secondary">
+      <div class="container-fluid mr-0 ml-0 pr-0 pl-0">
+        <div class="row">
+          <div class="col-4">
+            <label class="form-control btn btn-primary" (click)="append('1')" >1</label>
+          </div>
+          <div class="col-4">
+              <label class="form-control btn btn-primary" (click)="append('2')">2</label>
+          </div>
+          <div class="col-4">
+              <label class="form-control btn btn-primary" (click)="append('3')">3</label>
+          </div>
+          <div class="col-4">
+              <label class="form-control btn btn-primary" (click)="append('4')">4</label>
+            </div>
+            <div class="col-4">
+                <label class="form-control btn btn-primary" (click)="append('5')">5</label>
+            </div>
+            <div class="col-4">
+                <label class="form-control btn btn-primary" (click)="append('6')">6</label>
+            </div>
+            <div class="col-4">
+                <label class="form-control btn btn-primary" (click)="append('7')">7</label>
+              </div>
+              <div class="col-4">
+                  <label class="form-control btn btn-primary" (click)="append('8')">8</label>
+              </div>
+              <div class="col-4">
+                  <label class="form-control btn btn-primary" (click)="append('9')">9</label>
+              </div>
+              <div class="col-4">
+                  <label class="form-control btn btn-primary" (click)="append('0')">0</label>
+              </div>
+          </div>
+      </div>
+
+    </div>
+    <div class="col-4 bg-warning">
+        <div class="container-fluid pr-0 pl-0 mr-0 m-0">
+          <div class="row">
+              <div class="col-6">
+                  <label class="form-control btn btn-primary" (click)="append('+')">+</label>
+              </div>
+              <div class="col-6">
+                  <label class="form-control btn btn-primary" (click)="append('-')">-</label>
+              </div>
+              <div class="col-6">
+                  <label class="form-control btn btn-primary" (click)="append('*')">*</label>
+              </div>
+              <div class="col-6">
+                  <label class="form-control btn btn-primary" (click)="append('/')">/</label>
+              </div>
+              <div class="col-12">
+                    <label class="form-control btn btn-primary" (click)="clear()">Clear</label>
+                </div>
+              <div class="col-12">
+                  <label class="form-control btn btn-primary" (click)="evaluate()">=</label>
+              </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+</div>

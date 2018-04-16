@@ -1,0 +1,134 @@
+Angular
+	-> Module
+		-> Component
+		-> Pipes
+		-> Services
+		-> Derectives
+		
+		
+		
+Root Module
+	loaded when angular app starts
+	
+	load a root component
+	
+	
+	index.html
+	<html>
+		<body>
+			<app-root><h1>Heo, World</h1></app-root>
+			<script src="*.js"></script>
+			<script>
+				var element=document.getElementByTag("app-root");
+				element.innerHtml="<h1>Hello, world</h1>";
+			</script>
+			</body>
+	</html>
+	
+
+	
+	JS Class
+root.html
+@Component({
+	selectors:'app-root',
+	templateUrl:'./root.html',
+	styesUr:''
+})
+class MyComponent{
+		first = "Hello, World";
+		constructors(){
+		}
+}
+
+jsp
+servlet
+
+@RestController
+class MyRestController{
+}
+
+
+@NgModule({
+	declarations: [], declaring a the components, pipes, derectives
+	imports:[],   ---Import other modules
+	providers: [],	-- Wil discuss when discussing services
+	bootstrap: [],	-- What component to be loaded when the module is loading
+	exports: []
+})
+class MyModule{
+}
+
+
+various imports	
+webpack
+	- require.js
+	
+	file1
+		export class Class1{
+		}
+	file2
+		export class Class2{
+		}
+	file3
+		import {Class1} from './file1';
+		import {Class2} from './file2';
+		index.html
+			<body>
+				<arun></arun>
+			</body>
+			
+		@RestController(path="/" accept="" )
+		class Test{
+			@Autowired
+			private Box box;
+			
+			@Autowired
+			private Complex complex;
+		}
+		
+		
+		@Component(
+			
+		})
+		class Class1{
+		}
+	file3	
+		@Component({
+			selector:'arun',
+			template: `<mani></mani><santhosh></santhosh>';
+			`
+		})
+		class Class1{
+		}
+		
+		@Component({
+			selector:'santhosh'
+		})
+		class Class2{
+		}
+		
+		@Component({
+			selector:'mani'
+		})
+		class Class3{
+		}
+		
+		@NgModule({
+			declaration: [Class1, Class3],
+			imports: [Module2],
+			bootstrap: [Class1]
+		})
+		class Module1{
+		}
+		
+		@NgModule({
+			declaration: [Class2]
+		})
+		class Module2{
+		}
+		
+		main.ts
+		platformBrowserDynamic().bootstrapModule(Module1)
+		
+		
+		
